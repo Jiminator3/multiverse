@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 35, in script
+    show g2 happy behind g1 at slightleft+0.5
+  File "game/script.rpy", line 35, in <module>
+    show g2 happy behind g1 at slightleft+0.5
+TypeError: unsupported operand type(s) for +: 'ATLTransform' and 'float'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 35, in script
+    show g2 happy behind g1 at slightleft+0.5
+  File "D:\renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1387, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\renpy\renpy-8.1.1-sdk\renpy\ast.py", line 1387, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\renpy\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 35, in <module>
+    show g2 happy behind g1 at slightleft+0.5
+TypeError: unsupported operand type(s) for +: 'ATLTransform' and 'float'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+multiverse 1.0
+Sun Jul 23 18:43:38 2023
