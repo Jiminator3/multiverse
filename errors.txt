@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 68: end of line expected.
-    jump gg_room with Dissolve(1)
-                 ^
+File "game/script.rpy", line 36: the action keyword argument was not given a value.
+    action jump hinata_magazine
+           ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Jul 23 18:52:58 2023
+Sun Jul 30 19:23:51 2023
